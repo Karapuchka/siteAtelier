@@ -189,6 +189,10 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(#181511, transparent, transparent, transparent, transparent, #181511);
 }
 
+.header-offer__bg .btn {
+  opacity: 0;
+}
+
 .header-offer__bg h4, .header-offer__bg h1 {
   text-align: center;
 }
@@ -197,6 +201,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFAE2B;
   text-transform: uppercase;
   text-shadow: 1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black;
+  font-weight: 600;
 }
 
 .header-offer__bg h1 {
@@ -416,7 +421,10 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
   border: 1px solid #4B4136;
+  cursor: pointer;
 }
 
 .galary__item-image {
@@ -437,6 +445,13 @@ h6 {
   color: #FFFFFF;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.galary__item:hover {
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  -webkit-box-shadow: 1px 1px 10px #FFAE2B;
+          box-shadow: 1px 1px 10px #FFAE2B;
 }
 
 .btn {

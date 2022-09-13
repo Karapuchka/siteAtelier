@@ -1,1 +1,189 @@
 @import 'nullstyle.scss';
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:regular,italic,700);
+
+
+.wrapper {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #181511;
+    font: normal 400 13px 'Old Standard TT', sans-serif;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+
+    &-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.container {
+    width: 985px;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-right: 42px;
+
+    &__text {
+        user-select: none;
+        font-size: 22px;
+    }
+}
+
+.menu {
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        list-style: none;
+    }
+    
+    &__item {
+        margin-right: 28px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__item:last-child{
+        margin-right: 0;
+    }
+}
+
+
+.btn {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFAE2B;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn-scroll {
+    
+}
+
+.navigation {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__btn {
+        color: #FFAE2B;
+        background-color: transparent;
+        border: 1px solid #FFAE2B;
+    }
+    
+}
+
+.offer {
+
+    &-title {
+    }
+}
+
+.color-orange {
+    color: #FFAE2B;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.main {
+
+    &-content {
+    }
+
+    &__title {
+    }
+
+    &__bg {
+    }
+}
+
+.gallery {
+
+    &__item {
+
+        &-iamges {
+        }
+
+        &-subtitle {
+        }
+    }
+}
+
+
+.services {
+
+    &__item {
+    }
+
+    &__icon {
+    }
+
+    &__content {
+    }
+
+    &__text {
+    }
+}
+
+.social-media {
+
+    &__item {
+    }
+
+    &__item--main {
+    }
+}
+
+.stripes {
+
+    &__black {
+
+    }
+    &__orange {
+
+    }
+    &__text {
+
+    }
+}
+
+.social-link {
+
+    &__item {
+
+    }
+}
+
+.footer {
+
+    &__content {
+    }
+
+    &__text {
+    }
+
+    &__list {
+
+        &-item {
+        }
+    }
+
+}

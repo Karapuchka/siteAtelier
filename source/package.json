@@ -17,5 +17,9 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.54.5"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-webp": "^4.0.1"
   }
 }

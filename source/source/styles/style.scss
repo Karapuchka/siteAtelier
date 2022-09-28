@@ -1,3 +1,78 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__item{
+        position: relative;
+        width: 200px;
+        height: 40px;
+        border: 1px solid white;
+        background-color: #000;
+    }
+
+    &__item::before, &__item::after{
+        position: absolute;
+    }
+
+    &__item::after{
+        content: 'Loading...';
+        color: #fff;
+        z-index: 1;
+        font-size: 24px;
+        top: 55px;
+        left: 55px; 
+        animation: loadinText;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        transform-origin: left;
+    }
+
+    &__item::before{
+        content: '';
+        z-index: 4;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(211, 147, 90);
+        animation: loadinBar;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        transform-origin: left;
+    }
+
+    @keyframes loadinBar {
+        0%{
+            transform: scaleX(0);
+        }
+
+        100%{
+            transform: scaleX(1);
+        }
+    }
+
+     @keyframes loadinText {
+        0%{
+            transform: translateY(-10px);
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+
 @import 'nullstyle.scss';
 @import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:regular,italic,700);
 
@@ -706,9 +781,12 @@ h6{
         line-height: 50px;
     }
 
-
     .container{
-        padding: 40px 20px;
+        padding: 15px 20px;
+    }
+
+    .social-media {
+        height: 300px;
     }
 
     .menu__item{
@@ -736,6 +814,18 @@ h6{
 @media screen and (max-width: 450px){
 
 
+    .social-media__item--main h3 {
+        font-size: 50px;
+    }
+
+    .stripes__orange, .stripes__black {
+        width: 100%;
+    }
+
+    .services__item {
+        width: 100%;
+    }
+
     .gallery {
         grid-template: repeat(21, 350px)/repeat(1, 100%);
 
@@ -748,5 +838,43 @@ h6{
 
     .main__bg {
         height: 303px;
+    }
+
+    .stripes__text {
+        width: 100%;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .logo__text{
+        font-size: 35px;
+    }
+
+    .header-content{
+        justify-content: center;
+    }
+
+    .gallery__item-iamges {
+        width: 220px;
+        height: 200px;
+    }
+
+    .social-media__item--main {
+        background-size: 100%;
+    }
+
+    .social-media__item--main h3 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .footer__text {
+        line-height: 20px;
+    }
+
+    .footer__list {
+        align-items: center;
     }
 }

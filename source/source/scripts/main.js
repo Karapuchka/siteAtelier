@@ -15,12 +15,19 @@ const modal = document.querySelector('.modal');
 const socialLinksBlock = document.querySelector('.social-link');
 const btnViewLayouts = document.querySelector('.js-view-layouts')
 const btnBuyTemplate = document.querySelector('.js-btn-buy-template');
+const preloader = document.querySelector('.preloader');
+
+setTimeout(function(){
+    gsap.to(preloader, {duration: .5, opacity: 0});
+
+    gsap.to(preloader, {delay: .1, display: 'none'})
+}, 2000);
 
 window.addEventListener('DOMContentLoaded', function(item){
-    gsap.from(['.logo', '.menu .menu__item', '.navigation__btn'], {duration: .8, y: -10, stagger: .8, opacity: 0});
-    gsap.from('.js-header-subtitle', {duration: 2, opacity: 0, y: -50});
-    gsap.from('.js-header-title', {duration: 2, opacity: 0, y: 50, delay: 1});
-    gsap.from(btnViewLayouts, {duration: 2, opacity: 0, y: -50, delay: 2});
+    gsap.from(['.logo', '.menu .menu__item', '.navigation__btn'], {duration: .8, y: -10, stagger: .8, delay: 3, opacity: 0});
+    gsap.from('.js-header-subtitle', {duration: 2, delay: 4, opacity: 0, y: -50});
+    gsap.from('.js-header-title', {duration: 2, delay: 4, opacity: 0, y: 50, delay: 1});
+    gsap.from(btnViewLayouts, {duration: 2, delay: 3, opacity: 0, y: -50, delay: 2});
 });
 
 //Анимация заголовка сексии
@@ -219,16 +226,6 @@ gsap.from(['.stripes__black', '.stripes__orange'], {
     }
 });
 
-gsap.from('.stripes__text', {
-    duration: 2,
-    y: 40,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: '.js-social-media-title',
-        start: 'top center',
-    }
-});
-
 gsap.from('.social-link__item', {
     duration: 2,
     y: 40,
@@ -262,8 +259,11 @@ gsap.from('.footer__content', {
     }
 });
 
-if(body.offseWidth <= 780){
+if(body.offsetWidth <= 780){
 
+    gsap.to(btnSroll, {
+        display: 'none',
+    });
     gsap.from('.social-media', {
         duration: 1,
         opacity: 0,
@@ -331,6 +331,5 @@ else{
 };
 
 /* 
-    2. Сделать атаптив
     3. Добавить прелоадер
 */

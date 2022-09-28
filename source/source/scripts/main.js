@@ -2,20 +2,20 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-const body = document.body;
-const header = document.querySelector('header');
-const btn = document.querySelectorAll('.btn');
-const menu = document.querySelector('.menu__list');
-const templateSection = document.querySelector('.js-template');
+const body               = document.body;
+const header             = document.querySelector('header');
+const btn                = document.querySelectorAll('.btn');
+const menu               = document.querySelector('.menu__list');
+const templateSection    = document.querySelector('.js-template');
 const ourServicesSection = document.querySelector('.js-our-services');
-const contactSection = document.querySelector('.contact');
-const footerLinks = document.querySelectorAll('.js-footer__links');
-const btnSroll = document.querySelector('.btn-scroll');
-const modal = document.querySelector('.modal');
-const socialLinksBlock = document.querySelector('.social-link');
-const btnViewLayouts = document.querySelector('.js-view-layouts')
-const btnBuyTemplate = document.querySelector('.js-btn-buy-template');
-const preloader = document.querySelector('.preloader');
+const contactSection     = document.querySelector('.contact');
+const footerLinks        = document.querySelectorAll('.js-footer__links');
+const btnSroll           = document.querySelector('.btn-scroll');
+const modal              = document.querySelector('.modal');
+const socialLinksBlock   = document.querySelector('.social-link');
+const btnViewLayouts     = document.querySelector('.js-view-layouts')
+const btnBuyTemplate     = document.querySelector('.js-btn-buy-template');
+const preloader          = document.querySelector('.preloader');
 
 setTimeout(function(){
     gsap.to(preloader, {duration: .5, opacity: 0});
@@ -23,7 +23,7 @@ setTimeout(function(){
     gsap.to(preloader, {delay: .1, display: 'none'})
 }, 2000);
 
-window.addEventListener('DOMContentLoaded', function(item){
+window.addEventListener('DOMContentLoaded', function(){
     gsap.from(['.logo', '.menu .menu__item', '.navigation__btn'], {duration: .8, y: -10, stagger: .8, delay: 3, opacity: 0});
     gsap.from('.js-header-subtitle', {duration: 2, delay: 4, opacity: 0, y: -50});
     gsap.from('.js-header-title', {duration: 2, delay: 4, opacity: 0, y: 50, delay: 1});
@@ -329,7 +329,3 @@ else{
         }
     });
 };
-
-/* 
-    3. Добавить прелоадер
-*/

@@ -29,5 +29,5 @@ ___
 
 ### Заключение 
 
-Автор верстки [Karapuchka](https://github.com/Karapuchka)
+Автор верстки [Karapuchka](https://github.com/Karapuchka)  
 Данная верстка была сделана исключительно в образовательных целях

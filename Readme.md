@@ -11,7 +11,7 @@ ___
 
 * [Ссылка на макет](https://www.figma.com/file/KmnsgWKaOgNeT7oSwfR98M/Atelier.?node-id=0%3A1)
 * [Откуда был взят макет](https://t.me/htmlcssjstest)
-* [Фоновое изображение оффера](https://ru.freepik.com/free-photo/beautiful-sunset-in-the-mountains-landscape-with-sun-light-shining-through-orange-clouds-and-fog_10001640.htm)
+* [Фоновое изображение](https://ru.freepik.com/free-photo/beautiful-sunset-in-the-mountains-landscape-with-sun-light-shining-through-orange-clouds-and-fog_10001640.htm)
 
 ___
 
